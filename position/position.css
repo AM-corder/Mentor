@@ -1,0 +1,65 @@
+body{
+    margin:0;
+}
+
+.static-div1{
+    background-color: red;
+    height: 100px;
+}
+.static-div2{
+    background-color: pink;
+    height: 100px;
+    top:100px; /* 効かない */
+}
+
+.relative-div1{
+    background-color: blue;
+    height: 100px;
+}
+.relative-div2{
+    background-color: aqua;
+    position:relative;
+    top:100px;
+    height: 100px;
+}
+
+.absolute-wrap{
+    height: 200px;
+}
+.absolute-div1{
+    background-color: green;
+    height: 100px;
+}
+.absolute-div2{
+    position:absolute;
+    background-color: lime;
+    height: 100px;
+    top:100px; 
+}
+
+.absolute-wrap-parent-relative{
+    position: relative;
+    height: 200px;
+}
+
+.absolute-div1-parent-relative{
+    background-color: purple;
+    height: 100px;
+}
+.absolute-div2-parent-relative{
+    position:absolute;
+    background-color: maroon;
+    height: 100px;
+    top:100px; 
+}
+
+#div0{
+    height: 100px;
+}
+.flex-box{
+    display: flex;
+}
+
+.flex-box>div{
+    width: 50%;
+}

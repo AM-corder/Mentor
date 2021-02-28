@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="position.css">
+    <title>absolute（親要素にposition指定なし）</title>
+</head>
+
+<body>
+
+    <div id="div-0">
+        <p>上に高さ100px要素を加えてみたとき</p>
+    <div>
+
+
+<div class="flex-box">
+
+    <div id="wrap" class="absolute-wrap">
+        <div id="div1" class="absolute-div1">position指定なしダミー100pxの要素</div>
+        <div id="div2" class="absolute-div2">◆absolute要素(親要素にposition指定なし)<br> 一番上から数えたときの位置 = <span id="py"></span>px</div>
+    </div>
+
+    <div id="wrap" class="absolute-wrap-parent-relative">
+        <div id="div1" class="absolute-div1-parent-relative">position指定なしダミー100pxの要素</div>
+        <div id="div2" class="absolute-div2-parent-relative">◆absolute要素(親要素にposition指定あり)</br>⇒位置300pxに変わる！</div>
+    </div>
+
+</div>
+
+<script src="get-div2-py.js"></script>
+</body>
+</html>
